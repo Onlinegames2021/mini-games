@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+    <title>Games-Keloo</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<section>
+		<header>
+			<a href="#" class="logo">Games</a>
+			<div class="toggle" onclick="toggleMenu();"></div>
+			<ul class="navigation">
+				<li><a href="#" style="--i:1;">Home</a></li>
+				<li><a href="#" style="--i:2;">Characters</a></li>
+				<li><a href="#" style="--i:3;">Movies</a></li>
+				<li><a href="#" style="--i:4;">Games</a></li>
+				<li><a href="#" style="--i:5;">More</a></li>
+			</ul>
+		</header>
+		<div class="container">
+			<div class="box" style="--i:3;">
+				<div class="imgBx">
+					<a href="Box Ninja Game/index1.html"><img src="images/img1.jpg"></a>
+				</div>
+			</div>
+			<div class="box" style="--i:4;">
+				<div class="imgBx">
+					<a href="candy-crush-master/index.html"><img src="images/img2.jpg"></a>
+				</div>
+			</div>
+			<div class="box" style="--i:5;">
+				<div class="imgBx">
+					<a href="bullseye-game/dist/index.html"><img src="images/img3.jpg"></a>
+				</div>
+			</div>
+			<div class="box" style="--i:6;">
+				<div class="imgBx">
+					<a href="pure-css-tic-tac-toe/dist/index.html"><img src="images/img4.jpg"></a>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="box" style="--i:3;">
+				<div class="imgBx">
+					<a href="Box Ninja Game/index1.html"><img src="images/img1.jpg"></a>
+				</div>
+			</div>
+			<div class="box" style="--i:4;">
+				<div class="imgBx">
+					<a href="candy-crush-master/index.html"><img src="images/img2.jpg"></a>
+				</div>
+			</div>
+			<div class="box" style="--i:5;">
+				<div class="imgBx">
+					<a href="bullseye-game/dist/index.html"><img src="images/img3.jpg"></a>
+				</div>
+			</div>
+			<div class="box" style="--i:6;">
+				<div class="imgBx">
+					<a href="pure-css-tic-tac-toe/dist/index.html"><img src="images/img4.jpg"></a>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="box" style="--i:3;">
+				<div class="imgBx">
+					<a href="Box Ninja Game/index1.html"><img src="images/img1.jpg"></a>
+				</div>
+			</div>
+			<div class="box" style="--i:4;">
+				<div class="imgBx">
+					<a href="candy-crush-master/index.html"><img src="images/img2.jpg"></a>
+				</div>
+			</div>
+			<div class="box" style="--i:5;">
+				<div class="imgBx">
+					<a href="bullseye-game/dist/index.html"><img src="images/img3.jpg"></a>
+				</div>
+			</div>
+			<div class="box" style="--i:6;">
+				<div class="imgBx">
+					<a href="pure-css-tic-tac-toe/dist/index.html"><img src="images/img4.jpg"></a>
+				</div>
+			</div>
+		</div>
+	
+
+
+		<div class="footer">
+			<ul class="sci">
+				<li><a href="#" style="--i:9">Facebook</a></li>
+				<li><a href="#" style="--i:8">Twitter</a></li>
+				<li><a href="#" style="--i:7">Instagram</a></li>
+			</ul>
+			<p class="copyrightText">©Online Tutorials. 2020</p>
+		</div>
+	</section>
+	<script>
+		let imgBx = document.querySelectorAll('.imgBx');
+		imgBx.forEach(popup => popup.addEventListener('click', () =>{
+			popup.classList.toggle('active')
+		}))
+
+		function toggleMenu(){
+	      var menuToggle = document.querySelector('.toggle');
+	      var navigation = document.querySelector('.navigation');
+	      menuToggle.classList.toggle('active');
+	      navigation.classList.toggle('active');
+	    }
+	</script>
+</body>
+</html>
+
